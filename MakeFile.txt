@@ -1,0 +1,8 @@
+CC = g++
+CFLAGS = -g -Wall
+
+prog: prog.o 
+	$(CC) $(CFLAGS) -o prog prog.o 
+
+prog.o: prog.cpp
+	$(CC) $(CFLAGS) -c prog.cpp
